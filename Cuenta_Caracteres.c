@@ -1,11 +1,4 @@
 
-/*
-    Crear un programa que pida una palabra por teclado.
-	Indicar por pantalla la cantidad de caracteres que tiene sin contar el ‘\0’.
-
-	>>> TERMINADO <<<
-*/
-
 #include <stdio.h>
 #define LIM 50
 #define LIM_FGETS 51	// Pemite que el verdadero limite de la palabra ingresada sea LIM, ya que LIM_FGETS reserva una posicion para el NULL o '\0'
