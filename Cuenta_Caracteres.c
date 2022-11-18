@@ -12,14 +12,9 @@ int main()
     printf("Ingrese una palabra: ");
     fgets(palabra, LIM_FGETS, stdin);
     for (int i = 0; i < LIM; i++)
-    {
-        if (palabra[i] == 10) palabra[i] = '\0';
-    }
-/*
-	En la tabla ASCII el 10 corresponde al ENTER
-    Reemplazo el ENTER por un NULL para que la lectura de caracteres termine hasta esa posicion,
-    ademas de la estetica, para que no imprima un ENTER en el ultimo printf()
-*/
+    {                                               // En la tabla ASCII el 10 corresponde al ENTER
+        if (palabra[i] == 10) palabra[i] = '\0';    // Reemplazo el ENTER por un NULL para que la lectura de caracteres termine hasta esa posicion,
+    }                                               // ademas de la estetica, para que no imprima un ENTER en el ultimo printf()
     Cuenta_Caracteres (palabra);
     return 0;
 }
